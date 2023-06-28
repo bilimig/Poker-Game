@@ -77,10 +77,10 @@ namespace Poker_Game
             {
                 Console.WriteLine("Nowa runda:");
                 Console.WriteLine();
-
+                
                 currentRound = new Round(players);
                 currentRound.Start();
-
+            
                 // dodanie obslugi zakladow podejmowanie decyzji itd
             }
             
@@ -100,13 +100,13 @@ namespace Poker_Game
                 return players[0];
             }
 
-            public static Constans.Patterns CheckPatern(Player player)
+            private Player CheckBestPatern()
             {
-                
 
-                return Constans.Patterns.HighCard;
 
-                
+
+
+            return players[0];
 
             }
 
